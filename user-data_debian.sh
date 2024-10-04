@@ -46,11 +46,11 @@ EOF
 
 # set dir permissions
 sudo mkdir -p /home/web
-sudo chown -R www-user.www-user /home/web
+sudo chown -R www-user:www-user /home/web
 
 # put key pair for `www-user`
 sudo mkdir -p /home/www-user/.ssh/
 sudo bash -c "echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINJe5CXHRmYH94zQu+2fy5VYP8xBWSm7Fqk8O56ovNj+ www-user@10.2.3.21' >> /home/www-user/.ssh/authorized_keys"
 sudo chmod 600 /home/www-user/.ssh/authorized_keys
 
-sudo chown -R www-user.www-user /home/www-user/
+sudo chown -R www-user:www-user /home/www-user/

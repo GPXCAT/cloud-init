@@ -49,7 +49,7 @@ EOF
 
 # set dir permissions
 sudo mkdir -p /home/web
-sudo chown -R www-user.www-user /home/web
+sudo chown -R www-user:www-user /home/web
 
 # put key pair for `www-user`
 sudo mkdir -p /home/www-user/.ssh/
@@ -61,4 +61,4 @@ sudo -E BASH_STYLE_CDOE=${BASH_STYLE_CDOE} sh -c 'echo ${BASH_STYLE_CDOE} | base
 sudo -E BASH_STYLE_CDOE=${BASH_STYLE_CDOE} sh -c 'echo ${BASH_STYLE_CDOE} | base64 --decode >> /home/www-user/.bashrc'
 sudo -E BASH_STYLE_CDOE=${BASH_STYLE_CDOE} sh -c 'echo ${BASH_STYLE_CDOE} | base64 --decode >> /home/rocky/.bashrc'
 
-sudo chown -R www-user.www-user /home/www-user/
+sudo chown -R www-user:www-user /home/www-user/
