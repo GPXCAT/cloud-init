@@ -53,7 +53,7 @@ sudo chown -R www-user:www-user /home/web
 
 # put key pair for `www-user`
 sudo mkdir -p /home/www-user/.ssh/
-sudo bash -c "echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINJe5CXHRmYH94zQu+2fy5VYP8xBWSm7Fqk8O56ovNj+ www-user@10.2.3.21' >> /home/www-user/.ssh/authorized_keys"
+sudo bash -c "echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBXSRs3ftt0rbcSZiRIxanng0ArxQJtMQ10l8J+1UhNi www-user@localhost' >> /home/www-user/.ssh/authorized_keys"
 sudo chmod 600 /home/www-user/.ssh/authorized_keys
 
 export BASH_STYLE_CDOE='UFMxPSdcW1wwMzNbMDE7MzJtXF1cdUBcaFxbXDAzM1swMTszNG1cXSBcd1xbXDAzM1szMW1cXSQoZ2l0X2JyYW5jaClcW1wwMzNbMDE7MzRtXF0gXCRcW1wwMzNbMDBtXF0gJwpmdW5jdGlvbiBnaXRfYnJhbmNoIHsKICAgIHJlZj0kKGdpdCBzeW1ib2xpYy1yZWYgSEVBRCAyPiAvZGV2L251bGwpIHx8IHJldHVybjsKICAgIGVjaG8gIigiJHtyZWYjcmVmcy9oZWFkcy99IikiOwp9'
