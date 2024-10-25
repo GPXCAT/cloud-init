@@ -38,6 +38,7 @@ sudo -E USER_ID=${USER_ID}  sh -eux <<EOF
 
     # Adjust sysctl Configuration:
     echo "net.ipv4.ip_unprivileged_port_start = 80" >> /etc/sysctl.conf
+    echo "net.ipv4.ping_group_range = 0   2147483647" >> /etc/sysctl.conf
     sysctl -p /etc/sysctl.conf
 
     # set variables
