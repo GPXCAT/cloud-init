@@ -35,6 +35,7 @@ USER_ID=$(id -u www-user)
 sudo -E USER_ID=${USER_ID}  sh -eux <<EOF
     # Load ip_tables module
     modprobe ip_tables
+    echo "ip_tables" > /etc/modules-load.d/iptables.conf
 
     # Grant Rootless Docker Permission (for rootless mode):
     setcap cap_net_bind_service=+ep /usr/bin/rootlesskit
